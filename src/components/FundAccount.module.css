@@ -1,0 +1,95 @@
+.banner {
+  background: rgba(232, 200, 74, 0.06);
+  border: 1px solid rgba(232, 200, 74, 0.2);
+  border-radius: 12px;
+  padding: 14px 18px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  animation: fadeIn 0.4s ease 0.2s both;
+}
+
+.bannerLeft {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+  min-width: 0;
+}
+
+.bannerIcon {
+  font-size: 22px;
+  flex-shrink: 0;
+}
+
+.bannerTitle {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--xlm-gold);
+  margin-bottom: 2px;
+}
+
+.bannerDesc {
+  font-size: 11px;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+}
+
+.fundBtn {
+  background: rgba(232, 200, 74, 0.15);
+  border: 1px solid rgba(232, 200, 74, 0.35);
+  color: var(--xlm-gold);
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 700;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.fundBtn:hover:not(:disabled) {
+  background: rgba(232, 200, 74, 0.25);
+}
+
+.fundBtn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.spinner {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border: 2px solid rgba(232, 200, 74, 0.3);
+  border-top-color: var(--xlm-gold);
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+
+.msg {
+  width: 100%;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  padding-top: 8px;
+  border-top: 1px solid rgba(232, 200, 74, 0.1);
+  animation: fadeIn 0.3s ease;
+}
+
+.successMsg { color: var(--success); }
+.errorMsg   { color: var(--error); }
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
