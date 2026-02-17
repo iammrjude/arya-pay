@@ -1,5 +1,7 @@
 # AryaPay — Simple XLM Payment dApp
 
+> 🚀 **[Live Demo](https://arya-send.vercel.app)**
+
 A minimal, production-grade payment dApp built on the **Stellar Testnet** that lets you connect a Freighter wallet, view your XLM balance, and send XLM to any Stellar address.
 
 Built for the **Level 1 – White Belt** Stellar Developer track.

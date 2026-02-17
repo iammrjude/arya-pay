@@ -43,7 +43,7 @@ export default function BalanceCard({ address, onRefreshRequest }) {
     }
   }, [loadBalance, onRefreshRequest])
 
-  const [whole, decimal] = balance ? balance.split('.') : ['–', '0000000']
+  const [whole, decimal] = balance ? balance.split('.') : ['-', '0000000']
 
   return (
     <div className={styles.card}>
