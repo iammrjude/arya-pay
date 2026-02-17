@@ -137,6 +137,8 @@ Horizon result codes are mapped to human-readable messages (insufficient balance
 
 ```plaintext
 arya-pay/
+├── public/
+├── screenshots/
 ├── src/
 │   ├── components/
 │   │   ├── Header.jsx          # Nav bar with connect/disconnect
@@ -152,9 +154,12 @@ arya-pay/
 │   ├── App.module.css
 │   ├── main.jsx
 │   └── index.css
+├── .gitignore
 ├── index.html
+├── package.json
+├── README.md
 ├── vite.config.js
-└── package.json
+└── yarn.lock
 ```
 
 ---
