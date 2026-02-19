@@ -1,6 +1,5 @@
-import React from 'react'
-import { truncateAddress } from '../utils/stellar'
-import styles from './Header.module.css'
+import { truncateAddress } from '../utils/stellar';
+import styles from './Header.module.css';
 
 export default function Header({ connected, address, network, onConnect, onDisconnect, loading }) {
   const isTestnet = network === 'TESTNET'
@@ -50,5 +49,5 @@ export default function Header({ connected, address, network, onConnect, onDisco
         )}
       </div>
     </header>
-  )
+  );
 }

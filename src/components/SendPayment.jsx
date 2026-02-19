@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
-import { sendPayment, explorerUrl } from '../utils/stellar'
-import styles from './SendPayment.module.css'
+import { useState } from 'react';
+import { sendPayment, explorerUrl } from '../utils/stellar';
+import styles from './SendPayment.module.css';
 
 const INITIAL_FORM = { destination: '', amount: '', memo: '' }
 
@@ -221,5 +221,5 @@ export default function SendPayment({ fromAddress, signTransaction, onSuccess })
         ⚠ This sends real testnet transactions. Always verify addresses before sending.
       </p>
     </div>
-  )
+  );
 }

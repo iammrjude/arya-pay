@@ -1,8 +1,9 @@
-import React, { useEffect, useState, useCallback } from 'react';
+import { useEffect, useState, useCallback } from 'react';
 import { fetchBalance, truncateAddress } from '../utils/stellar';
 import styles from './BalanceCard.module.css';
 import { IoCopyOutline } from "react-icons/io5";
 import { IoCheckmarkOutline } from "react-icons/io5";
+import { LuRefreshCcw } from "react-icons/lu";
 
 export default function BalanceCard({ address, onRefreshRequest }) {
   const [balance, setBalance] = useState(null)
@@ -55,7 +56,9 @@ export default function BalanceCard({ address, onRefreshRequest }) {
           disabled={loading}
           title="Refresh balance"
         >
-          <span className={`${styles.refreshIcon} ${loading ? styles.spinning : ''}`}>↻</span>
+          <span className={`${styles.refreshIcon} ${loading ? styles.spinning : ''}`}>
+            <LuRefreshCcw size={12} />
+          </span>
         </button>
       </div>
 
@@ -97,5 +100,5 @@ export default function BalanceCard({ address, onRefreshRequest }) {
         </div>
       )}
     </div>
-  )
+  );
 }

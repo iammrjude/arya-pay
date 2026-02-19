@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
-import { fundWithFriendbot } from '../utils/stellar'
-import styles from './FundAccount.module.css'
+import { useState } from 'react';
+import { fundWithFriendbot } from '../utils/stellar';
+import styles from './FundAccount.module.css';
 
 export default function FundAccount({ address, onFunded }) {
   const [status, setStatus] = useState(null) // 'loading' | 'success' | 'error'
@@ -51,5 +51,5 @@ export default function FundAccount({ address, onFunded }) {
         </div>
       )}
     </div>
-  )
+  );
 }

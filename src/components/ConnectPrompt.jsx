@@ -1,5 +1,4 @@
-import React from 'react'
-import styles from './ConnectPrompt.module.css'
+import styles from './ConnectPrompt.module.css';
 
 export default function ConnectPrompt({ onConnect, loading, error, installed }) {
   return (
@@ -69,5 +68,5 @@ export default function ConnectPrompt({ onConnect, loading, error, installed }) 
         </div>
       </div>
     </div>
-  )
+  );
 }
