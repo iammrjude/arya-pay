@@ -1,4 +1,4 @@
-import React, { useRef, useCallback } from 'react'
+import { useRef, useCallback } from 'react'
 import { useFreighter } from './hooks/useFreighter'
 import Header from './components/Header'
 import ConnectPrompt from './components/ConnectPrompt'

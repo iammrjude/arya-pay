@@ -16,8 +16,8 @@
   --error-dim: #3d0015;
   --warning: #ffb830;
   --xlm-gold: #e8c84a;
-  --font-display: 'Syne', sans-serif;
-  --font-mono: 'DM Mono', monospace;
+  --font-display: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
 }
 
 *, *::before, *::after {
